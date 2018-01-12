@@ -16,7 +16,7 @@ node index.js
 
 JSON file containing all the transactions(4999).
 
-** #Execution time **
+** #Execution time [In my machine] **
 - 3 seconds  With page loading 
 - 1,5 seconds without
 
