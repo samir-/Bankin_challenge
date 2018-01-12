@@ -13,13 +13,14 @@ var util = require('util');
 
     //to select all rows inside the dvTable (the one without iframe)
     const  rowSelector = "#dvTable > table > tbody > tr";
+    // array of all transactions
     var all_trans = [];
     page.on('dialog', dialog => {
         // In case of alert popup Dismiss !
         dialog.dismiss();
     });
     // load the page one time !
-    await page.goto('https://web.bankin.com/challenge/index.html');
+    await page.goto('https://web.bankin.com/challenge/index.html',domcontentloaded);
     console.time("Scraping");
 
     // iterate over all the pages [ 5000 is the limit from the load.js ]
